@@ -17,7 +17,10 @@ public class Student {
     private Long studentId;
 
     private String fullName;
+
+    @Enumerated(EnumType.STRING)
     private GradeLevel gradeLevel;
+
     private String parentPhone;
     private String locationLink;
     private LocalDateTime createdAt;
