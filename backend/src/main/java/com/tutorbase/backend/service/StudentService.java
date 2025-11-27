@@ -4,14 +4,15 @@ import com.tutorbase.backend.dto.StudentDTO;
 import com.tutorbase.backend.entity.Student;
 import com.tutorbase.backend.mapper.StudentMapper;
 import com.tutorbase.backend.repository.StudentRepository;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 public class StudentService {
 
     @Autowired
